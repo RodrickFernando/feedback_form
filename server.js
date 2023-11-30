@@ -6,9 +6,10 @@ const app = express()
 
 app.set('view engine', 'ejs')
 app.use(express.urlencoded({ extended: true }));
+app.use(express.static('public'))
 
 
-app.get ("/", (req,res) =>{
+app.get ("/feedback", (req,res) =>{
     console.log("the feedback form is provided")
     res.render('index');
 })
