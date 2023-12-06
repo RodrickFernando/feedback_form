@@ -38,7 +38,7 @@ app.get('/viewfeedback', (req, res) => {
         });
     }
     });
-});e
+});
 
 app.get("/delete", (req, res) => {
     console.log("the delete form is provided");
